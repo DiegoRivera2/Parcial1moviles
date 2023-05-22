@@ -3,6 +3,7 @@ package com.example.edificiotracker.ui.building.Buildings.recyclerview
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.edificiotracker.data.buildings
 import com.example.edificiotracker.data.model.BuildingModel
 
 class BuildingRecyclerViewAdapter(
@@ -20,12 +21,12 @@ class BuildingRecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: BuildingRecyclerViewHolder, position: Int) {
-        val movie = movies[position]
-        holder.bind(movie, clickListener)
+        val building = buildings[position]
+        holder.bind(building, clickListener)
     }
 
-    fun setData(moviesList: List<BuildingModel>) {
-        movies.clear()
-        movies.addAll(moviesList)
+    fun setData(BuildingList: List<BuildingModel>) {
+        buildings.clear()
+        buildings.addAll(buildingsList)
     }
 }
