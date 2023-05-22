@@ -1,7 +1,8 @@
-package com.example.edificiotracker
+package com.example.edificiotracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.edificiotracker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
